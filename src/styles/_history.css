@@ -1,0 +1,7 @@
+.history {
+    height: 100%;
+    background-image: url("../images/history.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
