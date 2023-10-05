@@ -3,6 +3,8 @@
     --font-heading: "Oswald", sans-serif;
     --header-height: 74px;
     --footer-height: 74px;
+    --inner-padding: 24px;
+    --outer-padding: 48px;
     --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     --transition-scroll: 200ms ease;
