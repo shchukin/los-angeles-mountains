@@ -190,11 +190,11 @@ gulp.task('markups', function () {
 // Layouts: copy and change symbols <img> to sprite <svg>
 
 gulp.task('layouts', function () {
-    return gulp.src('src/layouts/**/*')
+    return gulp.src('src/*.html')
         .pipe(plumber())
         .pipe(change(symbolsImgToSpriteSvg))
         .pipe(change(addSourcesTimestamp))
-        .pipe(gulp.dest('build/layouts/'))
+        .pipe(gulp.dest('build/'))
         ;
 });
 
