@@ -1,5 +1,5 @@
 .history {
-    height: 100%;
+    height: calc(100% - var(--header-height));
     background-image: url("../images/history.jpg");
     background-size: cover;
     background-repeat: no-repeat;

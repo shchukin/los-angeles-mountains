@@ -1,4 +1,4 @@
 .footer {
-    height: var(--header-and-footer-height);
+    height: var(--footer-height);
     background-color: #404E6C;
 }
