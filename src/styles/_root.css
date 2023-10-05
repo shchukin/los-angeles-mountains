@@ -1,5 +1,7 @@
 :root {
     --font-text: "Lato", sans-serif;
     --font-heading: "Oswald", sans-serif;
-    --footer-height: 74px;
+    --header-and-footer-height: 74px;
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+    --transition-hover: 100ms ease;
 }

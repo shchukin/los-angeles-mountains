@@ -1,0 +1,87 @@
+.header {
+    --link-padding: 24px;
+}
+
+.header {
+    position: fixed;
+    z-index: 500;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: var(--header-and-footer-height);
+}
+    .header__wrap {
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+    }
+        .header__branding {
+
+        }
+
+        .header__nav {
+            margin-left: auto;
+            margin-right: calc(-1 * var(--link-padding));
+            display: flex;
+            align-items: stretch;
+            height: 100%;
+        }
+            .header__link {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: fit-content;
+                padding-left: var(--link-padding);
+                padding-right: var(--link-padding);
+                font-weight: 900;
+                font-style: italic;
+                font-size: 12px;
+                line-height: 20px;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                text-decoration: none;
+                /*text-underline-offset: 3px;*/
+                /*transition: text-decoration-color var(--transition-hover);*/
+            }
+
+            .header__link:hover {
+                text-decoration-color: transparent;
+            }
+                /* hovering background */
+                .header__link::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 14px;
+                    bottom: 14px;
+                    display: block;
+                    border-radius: 4px;
+                    transition: var(--transition-hover);
+                }
+
+                .header__link:hover::before {
+                    background-color: rgb(255 255 255 / 20%);
+                }
+
+
+                /* hovering line */
+                .header__link::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 28px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: calc(100% - 2 * var(--link-padding));
+                    height: 1px;
+                    background-color: currentColor;
+                    transition: width 400ms var(--ease-out-quint);
+                }
+
+                .header__link:hover::after {
+                    width: 0;
+                }
