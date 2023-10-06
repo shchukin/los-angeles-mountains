@@ -1,7 +1,20 @@
 .history {
+    padding-top: 54px;
     height: calc(100% - var(--header-height));
     background-image: url("../images/history.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+    .history__article {
+
+    }
+        .history__heading {
+            margin-left: calc(-1 * var(--inner-padding));
+        }
+
+        .history__contains {
+            margin-top: -5px;
+            margin-left: 48px;
+            margin-right: 48px;
+        }

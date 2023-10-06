@@ -1,6 +1,8 @@
 :root {
     --font-text: "Lato", sans-serif;
     --font-heading: "Oswald", sans-serif;
+    --body-font-size: 16px;
+    --body-line-heigth: 24px;
     --header-height: 74px;
     --footer-height: 74px;
     --inner-padding: 24px;
