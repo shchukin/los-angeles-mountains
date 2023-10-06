@@ -2,41 +2,34 @@
 
     /* Init Slick */
 
-    $('.your-class').slick({
+    $('.history__carousel').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: true,
         arrows: false,
+        accessibility: false, /* because of wrong tabindex */
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
+                    draggable: true,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 2,
+                    draggable: true,
                 }
             }
         ]
-    });
-
-
-    /* Init Magnific Popup */
-
-    $('.thumb').magnificPopup({
+    })
+    .magnificPopup({
+        delegate: '.history__thumb',
         type: 'image',
         gallery: {
             enabled: true
