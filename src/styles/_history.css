@@ -1,4 +1,6 @@
 .history {
+    display: flex;
+    flex-direction: column;
     padding-top: 54px;
     height: calc(100% - var(--header-height));
     background-image: url("../images/history.jpg");
@@ -18,3 +20,10 @@
             margin-left: 48px;
             margin-right: 48px;
         }
+
+    .history__gallery {
+        margin-top: auto;
+        padding-top: 25px;
+        padding-bottom: 35px;
+        background-color: rgb(65 79 107 / 80%);
+    }

@@ -11,3 +11,10 @@
     --transition-hover: 100ms ease;
     --transition-scroll: 200ms ease;
 }
+
+@media (width < 750px) {
+
+    :root {
+        --outer-padding: 24px;
+    }
+}
