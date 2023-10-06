@@ -2,7 +2,7 @@
 
     /* Init Slick */
 
-    $('.your-class').slick({
+    $('.history__carousel').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -35,13 +35,8 @@
                 }
             }
         ]
-    });
-
-
-    /* Init Magnific Popup */
-
-
-    $('.your-class').magnificPopup({
+    })
+    .magnificPopup({
         delegate: '.thumb',
         type: 'image',
         gallery: {

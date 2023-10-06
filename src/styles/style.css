@@ -1,7 +1,6 @@
 @import url("../vendors/normalize/normalize.css");
 @import url("../vendors/magnific-popup/magnific-popup.css");
 @import url("../vendors/slick/slick.css");
-@import url("../vendors/slick/slick-theme.css");
 @import url("_fonts.css");
 @import url("_box-sizing.css");
 @import url("_visuallyhidden.css");
@@ -18,6 +17,5 @@
 @import url("_title.css");
 @import url("_wysiwyg.css");
 @import url("_thumb.css");
-@import url("_slick.css");
 @import url("_mfp.css");
 

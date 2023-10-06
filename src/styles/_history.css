@@ -37,3 +37,83 @@
                     margin-left: -5px;
                     margin-right: -5px;
                 }
+
+
+
+/* Slick carousel (selectors are the same as in slick-theme.css */
+
+.history__carousel {
+
+}
+    .history__carousel .slick-dots {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+    }
+        .history__carousel .slick-dots li {
+
+        }
+            .history__carousel .slick-dots li button {
+                position: relative;
+                width: 16px;
+                height: 40px;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                cursor: pointer;
+            }
+                /* dot itself */
+                .history__carousel .slick-dots li button::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 11px;
+                    margin: auto;
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background-color: rgb(255 255 255 / 20%);
+                    transition: background-color var(--transition-hover);
+                }
+
+                .history__carousel .slick-dots li button:hover::before {
+                    background-color: rgb(255 255 255 / 50%);
+                }
+
+                .history__carousel .slick-dots li.slick-active button::before {
+                    background-color: rgb(255 255 255 / 100%);
+                }
+
+                /* hovering effect */
+                .history__carousel .slick-dots li button::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 6px;
+                    margin: auto;
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 3px;
+                    transition: background-color var(--transition-hover);
+                }
+
+                .history__carousel .slick-dots li button:hover::after {
+                    background-color: rgb(255 255 255 / 20%);
+                }
+
+
+.history__carousel .slick-slide {
+        padding-left: 5px;
+        padding-right: 5px;
+    }

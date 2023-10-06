@@ -1,6 +1,6 @@
 /* background color */
 .mfp-bg {
-    background-color: rgba(48, 48, 48, 0.95);
+    background-color: rgb(65 79 107 / 90%);
 }
 
 /* at start */
@@ -24,4 +24,15 @@
 .mfp-removing.mfp-wrap .mfp-content,
 .mfp-removing .mfp-arrow {
     opacity: 0;
+}
+
+
+/* Close button cursor */
+.mfp-zoom-out-cur {
+    cursor: default;
+}
+
+/* Overlay cursor */
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer;
 }
