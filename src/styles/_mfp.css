@@ -16,7 +16,7 @@
 .mfp-ready.mfp-wrap .mfp-content,
 .mfp-ready .mfp-arrow
 {
-    opacity: 1;
+    opacity: 100%;
 }
 
 /* animate out */

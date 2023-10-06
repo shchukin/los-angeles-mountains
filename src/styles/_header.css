@@ -116,7 +116,7 @@
 
             /* inside of SVG */
             .scrolled .header__logo #text {
-                opacity: 1;
+                opacity: 100%;
             }
 
         .scrolled .header__nav {
