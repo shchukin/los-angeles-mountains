@@ -1,21 +1,19 @@
 (function ($) {
 
-    /* Slick init */
+    /* Init Slick */
 
     $('.your-class').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: true,
-        gap: 10,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
                 }
             },
             {
@@ -34,6 +32,18 @@
             }
         ]
     });
+
+
+    /* Init Magnific Popup */
+
+    $('.thumb').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true
+        },
+        removalDelay: 200,
+    });
+
 
     /* Header color scheme */
 
@@ -58,7 +68,7 @@
     $('.header__link').on('click', function (event) {
         event.preventDefault();
         $('html, body').animate({
-            scrollTop: $( $(this).attr("href") ).offset().top - $header.outerHeight()
+            scrollTop: $($(this).attr("href")).offset().top - $header.outerHeight()
         }, 600);
     });
 

@@ -1,0 +1,27 @@
+/* background color */
+.mfp-bg {
+    background-color: rgba(48, 48, 48, 0.95);
+}
+
+/* at start */
+.mfp-bg,
+.mfp-arrow,
+.mfp-wrap .mfp-content {
+    opacity: 0;
+    transition: opacity 200ms ease-out;
+}
+
+/* animate in */
+.mfp-ready.mfp-bg,
+.mfp-ready.mfp-wrap .mfp-content,
+.mfp-ready .mfp-arrow
+{
+    opacity: 1;
+}
+
+/* animate out */
+.mfp-removing.mfp-bg,
+.mfp-removing.mfp-wrap .mfp-content,
+.mfp-removing .mfp-arrow {
+    opacity: 0;
+}
