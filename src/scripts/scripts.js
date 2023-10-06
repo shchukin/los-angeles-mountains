@@ -25,15 +25,6 @@
                     slidesToScroll: 2,
                     draggable: true,
                 }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    draggable: true,
-                    dots: false,
-                }
             }
         ]
     })
