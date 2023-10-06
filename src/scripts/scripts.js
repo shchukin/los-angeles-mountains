@@ -8,6 +8,7 @@
         slidesToScroll: 4,
         dots: true,
         arrows: false,
+        accessibility: false, /* because of wrong tabindex */
         responsive: [
             {
                 breakpoint: 1100,
@@ -37,7 +38,7 @@
         ]
     })
     .magnificPopup({
-        delegate: '.thumb',
+        delegate: '.history__thumb',
         type: 'image',
         gallery: {
             enabled: true
