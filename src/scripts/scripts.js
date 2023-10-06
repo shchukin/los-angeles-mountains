@@ -10,24 +10,28 @@
         arrows: false,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1100,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
+                    draggable: true,
                 }
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+                    draggable: true,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 400,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    draggable: true,
+                    dots: false,
                 }
             }
         ]
@@ -36,7 +40,9 @@
 
     /* Init Magnific Popup */
 
-    $('.thumb').magnificPopup({
+
+    $('.your-class').magnificPopup({
+        delegate: '.thumb',
         type: 'image',
         gallery: {
             enabled: true
