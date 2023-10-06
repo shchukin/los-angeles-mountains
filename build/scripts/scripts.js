@@ -56,7 +56,7 @@
 
     /* Smooth scrolling */
 
-    const $header = $('.header__sticky-panel');
+    const $header = $('.header');
 
     $('.header__link').on('click', function (event) {
         event.preventDefault();
