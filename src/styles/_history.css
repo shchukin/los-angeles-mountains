@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     padding-top: 54px;
-    height: 100%;
-    min-height: calc(100% - var(--header-height)); /* make this section to be a fullscreen */
-    min-height: max(750px, calc(100% - var(--header-height))); /* also make sure it is not less than 750px. Otherwise background image will overlap text. */
+    height: calc(100% - var(--header-height)); /* make this section to be a fullscreen */
+    min-height: 750px; /* also make sure it is not less than 750px. Otherwise background image will overlap text. */
     background-image: url("../images/history.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,7 +146,7 @@
         /*flex-direction: column;*/
         /*padding-top: 54px;*/
         /*min-height: calc(100% - var(--header-height)); !* make this section to be a fullscreen *!*/
-        min-height: max(650px, calc(100% - var(--header-height))); /* also make sure it is not less than 750px. Otherwise background image will overlap text. */
+        min-height: 650px; /* also make sure it is not less than 650px. Otherwise background image will overlap text. */
         background-image: url("../images/history-mobile.jpg");
         /*background-size: cover;*/
         /*background-repeat: no-repeat;*/
