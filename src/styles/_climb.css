@@ -1,4 +1,4 @@
 .climb {
     background-color: pink;
-    height: calc(100% - var(--header-height) - var(--footer-height));
+    height: calc(100vh - var(--header-height) - var(--footer-height));
 }
