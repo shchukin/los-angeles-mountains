@@ -1,5 +1,4 @@
 .hero {
-    min-height: 750px;
     height: 100vh; /* make history section to be a full-screen */
     height: 100svh; /* if browser supports svh, use it for better viewport stretching on mobile devices */
     margin-top: 0;
@@ -48,11 +47,16 @@
 @media (width < 750px) {
 
     .hero {
-        min-height: 580px;
         background-image: url("../images/hero-mobile.jpg");
     }
 
-    /* mobile image doesn't need a tall variation. Al lsmartphones are tall. */
-
+    /* Mobile image doesn't need a tall variation. All smartphones are tall.
+     * But smartphone can be in landscape mode
+     */
+    @media (min-aspect-ratio: 1 / 1) {
+        .hero {
+            background-image: url("../images/hero-mobile-landscape.jpg");
+        }
+    }
 }
 
