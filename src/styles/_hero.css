@@ -2,11 +2,40 @@
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    background-image: url("../images/hero.png");
+    background-image: url("../images/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
+}
+
+/* 825px is the height of the background image and it is unclear what to do on screens taller than 826px.
+ * Original image will be stretched and logo will become too big. So let's make an alternative, tall images.
+ * It adds a hundred of pixels at the bottom, using mountains of original photo. Not on top, unfortunately,
+ * because skies are being cut on that photo. But still, this is better than stretching.
+ */
+@media (826px <= height) {
+    .hero {
+        background-image: url("../images/hero-tall.jpg");
+    }
+}
+
+
+
+/* Logo is too big for tablets.
+ * Need another image. Let's recreate it in photoshop with smaller logo
+ */
+@media (750px <= width < 1100px) {
+
+    .hero {
+        background-image: url("../images/hero-tablets.jpg");
+    }
+
+    @media (826px <= height) {
+        .hero {
+            background-image: url("../images/hero-tablets-tall.jpg");
+        }
+    }
 }
