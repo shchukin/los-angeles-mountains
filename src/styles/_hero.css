@@ -1,4 +1,5 @@
 .hero {
+    position: relative;
     height: 100vh; /* make history section to be a full-screen */
     height: 100svh; /* if browser supports svh, use it for better viewport stretching on mobile devices */
     margin-top: 0;
@@ -57,6 +58,67 @@
         .hero {
             background-image: url("../images/hero-mobile-landscape.jpg");
         }
+    }
+}
+
+
+
+
+@keyframes hero-scroll-moving {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(0); }
+    30% { transform: translateY(-20px); }
+    70% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}
+
+.hero__scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin: auto;
+    width: 60px;
+    height: 100px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 8px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.hero__scroll:hover {
+    background-color: rgb(255 255 255 / 40%);
+}
+    .hero__scroll::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 48px;
+        height: 48px;
+        display: block;
+        background-image: url("../vectors/mouse.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        filter: drop-shadow(0 0 1px #FFFFFF);
+        animation: hero-scroll-moving 4000ms ease infinite;
+    }
+
+
+@media (width < 1100px) {
+    .hero__scroll::after {
+        width: 40px;
+        height: 40px;
+        background-image: url("../vectors/touch.svg");
     }
 }
 
