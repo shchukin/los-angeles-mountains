@@ -16,5 +16,7 @@
 
     :root {
         --outer-padding: 24px;
+        --body-font-size: 15px;
+        --body-line-heigth: 22px;
     }
 }
