@@ -12,8 +12,19 @@
     --transition-scroll: 200ms ease;
 }
 
-@media (width < 740px) {
 
+/* large smartphone, such as "max" or "plus" models */
+@media (400px <= width < 740px) {
+
+    :root {
+        --outer-padding: 32px;
+        --body-font-size: 15px;
+        --body-line-heigth: 22px;
+    }
+}
+
+/* basic smartphones */
+@media (350px <= width < 400px) {
     :root {
         --outer-padding: 24px;
         --body-font-size: 15px;
@@ -21,8 +32,8 @@
     }
 }
 
+/* small and legacy smartphones */
 @media (width < 350px) {
-
     :root {
         --outer-padding: 16px;
         --body-font-size: 14px;
