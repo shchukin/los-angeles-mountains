@@ -1,5 +1,7 @@
 .hero {
-    height: 100%;
+    min-height: 750px;
+    height: 100vh; /* make history section to be a full-screen */
+    height: 100svh; /* if browser supports svh, use it for better viewport stretching on mobile devices */
     margin-top: 0;
     margin-bottom: 0;
     background-image: url("../images/hero.jpg");
@@ -30,12 +32,30 @@
 @media (750px <= width < 1100px) {
 
     .hero {
-        background-image: url("../images/hero-tablets.jpg");
+        background-image: url("../images/hero-tablet.jpg");
     }
 
     @media (826px <= height) {
         .hero {
-            background-image: url("../images/hero-tablets-tall.jpg");
+            background-image: url("../images/hero-tablet-tall.jpg");
         }
     }
 }
+
+/*
+ *
+ */
+@media (width < 750px) {
+
+    .hero {
+        min-height: 580px;
+        background-image: url("../images/hero-mobile.jpg");
+    }
+
+    @media (826px <= height) {
+        .hero {
+            background-image: url("../images/hero-mobile-tall.jpg");
+        }
+    }
+}
+

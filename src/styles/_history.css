@@ -1,4 +1,7 @@
 .history {
+    min-height: 750px;
+    height: calc(100vh - var(--header-height)); /* make history section to be a full-screen */
+    height: calc(100svh - var(--header-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
     display: flex;
     flex-direction: column;
     padding-top: 54px;
@@ -6,10 +9,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
-
-    min-height: 750px;
-    height: calc(100vh - var(--header-height)); /* make history section to be a full-screen */
-    height: calc(100svh - var(--header-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
 }
 
 @media (900px <= height) {
