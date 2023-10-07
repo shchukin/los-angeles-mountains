@@ -12,7 +12,7 @@
     height: calc(100svh - var(--header-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
 }
 
-@media (min-height: 900px) {
+@media (900px <= height) {
     .history {
         background-position: center center;
     }

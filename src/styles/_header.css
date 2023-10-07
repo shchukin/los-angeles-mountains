@@ -184,3 +184,37 @@
                 .scrolled .header__link:hover::after {
                     /*width: 0;*/
                 }
+
+
+
+@media (width < 740px) {
+
+    .header {
+        --link-padding: 16px;
+    }
+
+}
+
+
+@media ( 380px <= width < 420px ) {
+
+    .header {
+        --link-padding: 10px;
+    }
+
+    .header__logo {
+        margin-left: -10px; /* better alignment */
+    }
+}
+
+
+@media ( width < 380px ) {
+
+    .header__logo {
+        width: 44px;
+    }
+        /* inside of SVG */
+        .header__logo #text {
+            display: none;
+        }
+}

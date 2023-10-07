@@ -20,3 +20,50 @@
             color: #63769d;
             text-transform: uppercase;
         }
+
+
+@media (width < 740px) {
+
+    .footer {
+        /*height: var(--footer-height);*/
+        /*background-color: #404E6C;*/
+    }
+        .footer__wrap {
+            /*height: 100%;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+        }
+            .footer__logo {
+
+            }
+
+            .footer__copyright {
+                /*margin-left: auto;*/
+                /*font-weight: 900;*/
+                /*font-style: italic;*/
+                /*font-size: 12px;*/
+                /*line-height: 20px;*/
+                /*color: #63769d;*/
+                /*text-transform: uppercase;*/
+            }
+}
+
+
+@media ( 380px <= width < 420px ) {
+
+    .footer__logo {
+        margin-left: -10px; /* Same as in header. For better alignment. */
+    }
+}
+
+
+@media ( width < 500px ) {
+
+    .footer__logo {
+        width: 44px;
+    }
+        /* inside of SVG */
+        .footer__logo #text {
+            display: none;
+        }
+}
