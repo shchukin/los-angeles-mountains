@@ -52,10 +52,7 @@
         background-image: url("../images/hero-mobile.jpg");
     }
 
-    @media (826px <= height) {
-        .hero {
-            background-image: url("../images/hero-mobile-tall.jpg");
-        }
-    }
+    /* mobile image doesn't need a tall variation. Al lsmartphones are tall. */
+
 }
 
