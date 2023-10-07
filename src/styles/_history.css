@@ -2,12 +2,21 @@
     display: flex;
     flex-direction: column;
     padding-top: 54px;
-    min-height: calc(100vh - var(--header-height)); /* make this section to be a fullscreen */
-    min-height: max(750px, calc(100vh - var(--header-height))); /* also make sure it is not less than 750px. Otherwise background image will overlap text. */
     background-image: url("../images/history.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 30%;
+
+    /* very basic min-height */
+    min-height: 500px;
+
+    /* fullscreen via 100vh */
+    min-height: calc(100vh - var(--header-height)); /* make this section to be a fullscreen */
+    min-height: max(750px, calc(100vh - var(--header-height))); /* also make sure it is not less than 750px. Otherwise background image will overlap text. */
+
+    /* use "svh" for better viewport match on mobile devise if browser supports:  */
+    min-height: calc(100svh - var(--header-height));
+    min-height: max(750px, calc(100svh - var(--header-height)));
 }
 
 @media (min-height: 900px) {
@@ -142,15 +151,16 @@
 @media (width < 750px) {
 
     .history {
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*padding-top: 54px;*/
-        /*min-height: calc(100% - var(--header-height)); !* make this section to be a fullscreen *!*/
-        min-height: max(650px, calc(100vh - var(--header-height))); /* also make sure it is not less than 650px. Otherwise background image will overlap text. */
+        padding-top: 30px;
         background-image: url("../images/history-mobile.jpg");
-        /*background-size: cover;*/
-        /*background-repeat: no-repeat;*/
-        /*background-position: center top;*/
+
+        /* fullscreen via 100vh */
+        min-height: calc(100vh - var(--header-height)); /* make this section to be a fullscreen */
+        min-height: max(500px, calc(100vh - var(--header-height))); /* also make sure it is not less than 600px. Otherwise background image will overlap text. */
+
+        /* use "svh" for better viewport match on mobile devise if browser supports:  */
+        min-height: calc(100svh - var(--header-height));
+        min-height: max(500px, calc(100svh - var(--header-height)));
     }
         .history__article {
 
