@@ -7,16 +7,9 @@
     background-repeat: no-repeat;
     background-position: center 30%;
 
-    /* very basic min-height */
-    min-height: 500px;
-
-    /* fullscreen via 100vh */
-    min-height: calc(100vh - var(--header-height)); /* make this section to be a fullscreen */
-    min-height: max(750px, calc(100vh - var(--header-height))); /* also make sure it is not less than 750px. Otherwise background image will overlap text. */
-
-    /* use "svh" for better viewport match on mobile devise if browser supports:  */
-    min-height: calc(100svh - var(--header-height));
-    min-height: max(750px, calc(100svh - var(--header-height)));
+    min-height: 750px;
+    height: calc(100vh - var(--header-height)); /* make history section to be a full-screen */
+    height: calc(100svh - var(--header-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
 }
 
 @media (min-height: 900px) {
@@ -148,19 +141,12 @@
 
 
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .history {
         padding-top: 30px;
         background-image: url("../images/history-mobile.jpg");
-
-        /* fullscreen via 100vh */
-        min-height: calc(100vh - var(--header-height)); /* make this section to be a fullscreen */
-        min-height: max(500px, calc(100vh - var(--header-height))); /* also make sure it is not less than 600px. Otherwise background image will overlap text. */
-
-        /* use "svh" for better viewport match on mobile devise if browser supports:  */
-        min-height: calc(100svh - var(--header-height));
-        min-height: max(500px, calc(100svh - var(--header-height)));
+        min-height: 580px;
     }
         .history__article {
 
@@ -170,118 +156,8 @@
             }
 
             .history__contains {
-                /*margin-top: -5px;*/
                 margin-top: 20px;
                 margin-left: 0;
                 margin-right: 0;
             }
-
-        .history__gallery {
-            /*margin-top: auto;*/
-            /*background-color: rgb(65 79 107 / 80%);*/
-        }
-            .history__gallery-wrap {
-
-            }
-                .history__overflow {
-                    /*overflow: hidden;     !* cut .history__thumb spacing *!*/
-                    /*padding-top: 20px;*/
-                    /*padding-bottom: 20px;*/
-                }
-                    .history__strut {
-                        /*margin-left: -5px;  !* .history__thumb inside will have "padding: 0 5px;" *!*/
-                        /*margin-right: -5px; !* .history__thumb inside will have "padding: 0 5px;" *!*/
-                    }
-
-
-
-    /* Slick carousel (selectors are the same as in slick-theme.css */
-
-    .history__carousel {
-
-    }
-        .history__carousel .slick-dots {
-            /*margin-top: -5px; !* inner padding of tiles *!*/
-            /*margin-bottom: -20px; !* dots themselves have huge padding *!*/
-            /*padding-left: 0;*/
-            /*list-style: none;*/
-            /*display: flex;*/
-            /*align-items: stretch;*/
-            /*justify-content: center;*/
-        }
-            .history__carousel .slick-dots li {
-
-            }
-                .history__carousel .slick-dots li button {
-                    /*position: relative;*/
-                    /*width: 16px;*/
-                    /*height: 35px;*/
-                    /*padding: 0;*/
-                    /*border: none;*/
-                    /*background-color: transparent;*/
-                    /*text-indent: 200%;*/
-                    /*white-space: nowrap;*/
-                    /*overflow: hidden;*/
-                    /*cursor: pointer;*/
-                }
-                    /* dot itself */
-                    .history__carousel .slick-dots li button::before {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*left: 0;*/
-                        /*right: 0;*/
-                        /*top: 11px;*/
-                        /*margin: auto;*/
-                        /*display: block;*/
-                        /*width: 6px;*/
-                        /*height: 6px;*/
-                        /*border-radius: 50%;*/
-                        /*background-color: rgb(255 255 255 / 20%);*/
-                        /*transition: background-color var(--transition-hover);*/
-                    }
-
-                    .history__carousel .slick-dots li button:hover::before {
-                        /*background-color: rgb(255 255 255 / 50%);*/
-                    }
-
-                    .history__carousel .slick-dots li.slick-active button::before {
-                        /*background-color: rgb(255 255 255 / 100%);*/
-                    }
-
-                    /* hovering effect */
-                    .history__carousel .slick-dots li button::after {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*left: 0;*/
-                        /*right: 0;*/
-                        /*top: 6px;*/
-                        /*margin: auto;*/
-                        /*display: block;*/
-                        /*width: 16px;*/
-                        /*height: 16px;*/
-                        /*border-radius: 3px;*/
-                        /*transition: background-color var(--transition-hover);*/
-                    }
-
-                    .history__carousel .slick-dots li button:hover::after {
-                        /*background-color: rgb(255 255 255 / 20%);*/
-                    }
-
-
-        /* single tile */
-        .history__carousel .slick-slide {
-            /*padding: 5px; !* left and right is needed to create a gap between tiles while top and bottom is needed to not to cut focus ring*!*/
-            /*outline: none !important;*/
-        }
-
-
-    /* inside of slick gallery */
-    .history__thumb {
-        /*display: block;*/
-    }
-        .history__image {
-            /*width: 100%;*/
-            /*aspect-ratio: 3 / 2;*/
-            /*background-color: #FFFFFF;*/
-        }
 }

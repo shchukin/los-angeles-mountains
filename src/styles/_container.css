@@ -9,7 +9,7 @@
     margin-right: auto;
 }
 
-@media (width < 750px) {
+@media (width < 740px) {
 
     .container {
         border-left: var(--outer-padding) solid transparent;
