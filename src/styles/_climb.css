@@ -1,8 +1,10 @@
 .climb {
+    min-height: 750px;
+    height: calc(100vh - var(--header-height) - var(--footer-height)); /* make climb section to be a full-screen */
+    height: calc(100svh - var(--header-height) - var(--footer-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: calc(100vh - var(--header-height) - var(--footer-height));
 }
     .climb__head {
         flex-shrink: 0;
@@ -41,7 +43,10 @@
                 text-decoration: underline;
                 text-decoration-color: transparent;
                 cursor: pointer;
-                transition: background-color var(--transition-hover);
+                user-select: none;
+                transition: background-color var(--transition-hover),
+                            text-decoration-color var(--transition-hover),
+                            color var(--transition-hover);
             }
 
             .climb__link:hover {
@@ -70,6 +75,8 @@
             bottom: 0;
             visibility: hidden;
             opacity: 0;
+            transition: opacity 600ms ease,
+                        visibility 600ms ease;
         }
 
         .climb__item--current {
@@ -86,6 +93,7 @@
             .climb__dropdown {
                 position: relative;
                 height: 100%;
+                overflow: hidden;
             }
                 .climb__background {
                     position: absolute;
@@ -100,6 +108,6 @@
                         object-fit: cover;
                     }
 
-                .climb__schedule {
+                .climb__tab {
                     position: relative;
                 }

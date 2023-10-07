@@ -65,4 +65,36 @@
         }, 600);
     });
 
+
+    /* Climb desktop */
+
+    $('.climb__link').on('click', function () {
+        const $this = $(this);
+        if(! $this.hasClass('climb__link--current')) {
+            $('.climb__link--current').removeClass('climb__link--current');
+            $this.addClass('climb__link--current');
+            $('.climb__item--current').removeClass('climb__item--current');
+            $('.climb__item').eq($this.index()).addClass('climb__item--current');
+        }
+    });
+
 })(jQuery);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
