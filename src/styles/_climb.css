@@ -136,9 +136,8 @@
 @media (width < 740px) {
 
     .climb {
-        /*min-height: calc(100vh - var(--header-height) - var(--footer-height)); !* make climb section to be a full-screen *!*/
-        /*min-height: calc(100svh - var(--header-height) - var(--footer-height)); !* if browser supports svh, use it for better viewport stretching on mobile devices *!*/
-        /*display: flex;*/
+        min-height: 0;
+        display: block;
         /*flex-direction: column;*/
         /*background-color: white;*/
     }
@@ -167,9 +166,7 @@
 
         .climb__body {
             /*position: relative;*/
-            /*flex-grow: 1;*/
-            /*display: flex;*/
-            /*flex-direction: column;*/
+            display: block;
         }
             .climb__item {
                 position: static;
@@ -210,21 +207,27 @@
                         cursor: pointer;
                         user-select: none;
                         transition: background-color var(--transition-hover),
-                        text-decoration-color var(--transition-hover),
-                        color var(--transition-hover);
+                                    text-decoration-color var(--transition-hover),
+                                    color var(--transition-hover);
                     }
 
-                    .climb__item--current .climb__handler {
-
+                    .climb__item--expanded .climb__handler {
+                        background-color: #AFB4BE;
+                        color: #414f6b;
+                        text-decoration-color: currentColor;
                     }
 
                 .climb__dropdown {
                     display: none;
                     /*flex-grow: 1;*/
-                    /*display: flex;*/
                     /*flex-direction: column;*/
                     /*position: relative;*/
                 }
+
+                .climb__item--expanded .climb__dropdown {
+                    display: block;
+                }
+
                     .climb__background {
                         /*position: absolute;*/
                         /*left: 0;*/
