@@ -66,7 +66,7 @@
     });
 
 
-    /* Climb desktop */
+    /* Climb desktop: tabs (climb__item--current) */
 
     $('.climb__link').on('click', function () {
         const $this = $(this);
@@ -79,16 +79,7 @@
     });
 
 
-    /* Climb mobile */
-    const $climbItem = $('.climb__item');
-
-    $climbItem.each(function () {
-        const height = $(this).find('.climb__dropdown').outerHeight();
-        $(this).find('.climb__strut').css('height', height);
-        if(!$(this).hasClass('climb__item--expanded') ) {
-            $(this).find('.climb__dropdown').css('display', 'none');
-        }
-    });
+    /* Climb mobile: accordion (climb__item--expanded) */
 
     $('.climb__handler').on('click', function () {
         const $thisItem = $(this).parents('.climb__item');
@@ -102,11 +93,12 @@
             $thisItem.removeClass('climb__item--expanded');
             $thisItem.find('.climb__dropdown').slideUp();
         }
-
-        $('html, body').animate({
-            scrollTop: $('.climb__body').offset().top - $header.outerHeight()
-        }, 600);
+        //
+        // $('html, body').animate({
+        //     scrollTop: $('.climb__body').offset().top - $header.outerHeight()
+        // }, 600);
     });
+
 
 })(jQuery);
 
