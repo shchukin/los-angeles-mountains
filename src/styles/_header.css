@@ -102,14 +102,13 @@
 
 .scrolled .header {
     background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgb(64 78 108 / 20%);
 }
     .scrolled .header__wrap {
-        /*height: 100%;*/
-        /*display: flex;*/
-        /*align-items: center;*/
+
     }
         .scrolled .header__logo {
-            /*vertical-align: top;*/
+
         }
             /* inside of SVG */
             .scrolled .header__logo #emblem {
@@ -122,43 +121,18 @@
             }
 
         .scrolled .header__nav {
-            /*margin-left: auto;*/
-            /*margin-right: calc(-1 * var(--link-padding));*/
-            /*display: flex;*/
-            /*align-items: stretch;*/
-            /*height: 100%;*/
+
         }
             .scrolled .header__link {
-                /*position: relative;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
-                /*width: fit-content;*/
-                /*padding-left: var(--link-padding);*/
-                /*padding-right: var(--link-padding);*/
-                /*font-weight: 900;*/
-                /*font-style: italic;*/
-                /*font-size: 12px;*/
-                /*line-height: 20px;*/
                 color: #414f6b;
-                /*text-transform: uppercase;*/
-                /*text-decoration: none;*/
             }
 
             .scrolled .header__link:hover {
-                /*text-decoration-color: transparent;*/
+
             }
                 /* hovering background */
                 .scrolled .header__link::before {
-                    /*content: "";*/
-                    /*position: absolute;*/
-                    /*left: 0;*/
-                    /*right: 0;*/
-                    /*top: 14px;*/
-                    /*bottom: 14px;*/
-                    /*display: block;*/
-                    /*border-radius: 4px;*/
-                    /*transition: var(--transition-hover);*/
+
                 }
 
                 .scrolled .header__link:hover::before {
@@ -168,22 +142,11 @@
 
                 /* hovering line */
                 .scrolled .header__link::after {
-                    /*content: "";*/
-                    /*position: absolute;*/
-                    /*left: 0;*/
-                    /*right: 0;*/
-                    /*bottom: 28px;*/
-                    /*display: block;*/
-                    /*margin-left: auto;*/
-                    /*margin-right: auto;*/
-                    /*width: calc(100% - 2 * var(--link-padding));*/
-                    /*height: 1px;*/
-                    /*background-color: currentColor;*/
-                    /*transition: width 400ms var(--ease-out-quint);*/
+
                 }
 
                 .scrolled .header__link:hover::after {
-                    /*width: 0;*/
+             
                 }
 
 
