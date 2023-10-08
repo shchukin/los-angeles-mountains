@@ -177,7 +177,7 @@
                     <p>Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim tortor nec congue.</p>
                 </div>
             </div>
-            <div class="climb__navigation">
+            <div class="climb__navigation"><!-- desktop only navigation -->
                 <div class="climb__navigation-wrap container">
                     <button class="climb__link climb__link--current" type="button">Mountain 1</button>
                     <button class="climb__link" type="button">Mountain 2</button>
@@ -186,7 +186,7 @@
                 </div>
             </div>
             <div class="climb__body">
-                <div class="climb__item climb__item--current climb__item--expanded">
+                <div class="climb__item climb__item--current climb__item--expanded"><!-- ".climb__item--current" is for desktop tabs and ".climb__item--expanded" is for mobile accordion -->
                     <h3 class="climb__sub-heading">
                         <button class="climb__handler" type="button">
                             Mountain 1
@@ -265,7 +265,7 @@
                             Mountain 2
                         </button>
                     </h3>
-                    <div class="climb__dropdown" style="display: none;">
+                    <div class="climb__dropdown" style="display: none;"><!-- "display: none" is needed fo jQuery animations on smartphones -->
                         <div class="climb__strut">
                             <div class="climb__background">
                                 <img class="climb__image" src="temp/mountains/mountain-b.jpg" alt="">
@@ -338,7 +338,7 @@
                             Mountain 3
                         </button>
                     </h3>
-                    <div class="climb__dropdown" style="display: none;">
+                    <div class="climb__dropdown" style="display: none;"><!-- "display: none" is needed fo jQuery animations on smartphones -->
                         <div class="climb__strut">
                             <div class="climb__background">
                                 <img class="climb__image" src="temp/mountains/mountain-c.jpg" alt="">
@@ -403,7 +403,7 @@
                             Mountain 4
                         </button>
                     </h3>
-                    <div class="climb__dropdown" style="display: none;">
+                    <div class="climb__dropdown" style="display: none;"><!-- "display: none" is needed fo jQuery animations on smartphones -->
                         <div class="climb__strut">
                             <div class="climb__background">
                                 <img class="climb__image" src="temp/mountains/mountain-d.jpg" alt="">

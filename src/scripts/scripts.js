@@ -93,10 +93,10 @@
             $thisItem.removeClass('climb__item--expanded');
             $thisItem.find('.climb__dropdown').slideUp();
         }
-        //
-        // $('html, body').animate({
-        //     scrollTop: $('.climb__body').offset().top - $header.outerHeight()
-        // }, 600);
+
+        $('html, body').animate({
+            scrollTop: $('.climb__body').offset().top - $header.outerHeight()
+        }, 600);
     });
 
 

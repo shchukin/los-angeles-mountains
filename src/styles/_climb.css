@@ -1,3 +1,5 @@
+/* This component works as tabs on desktop and accordion on mobiles */
+
 .climb {
     min-height: calc(100vh - var(--header-height) - var(--footer-height)); /* make climb section to be a full-screen */
     min-height: calc(100svh - var(--header-height) - var(--footer-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
@@ -101,6 +103,14 @@
                 display: flex;
                 flex-direction: column;
             }
+
+            /* this element will be animated via jQuery on smartphones, so it has "display: none" in the DOM */
+            /* On desktops we need "display: flex" with higher specificity */
+            @media (740px <= width) {
+                .climb__dropdown {
+                    display: flex !important;
+                }
+            }
                 .climb__strut {
                     position: relative;
                     flex-grow: 1;
@@ -140,11 +150,11 @@
 
 @media (width < 740px) {
 
+    /* Rewrite tabs to accordion: */
+
     .climb {
         min-height: 480px;
         display: flex;
-        /*flex-direction: column;*/
-        /*background-color: white;*/
     }
         .climb__head {
             /*flex-shrink: 0;*/
