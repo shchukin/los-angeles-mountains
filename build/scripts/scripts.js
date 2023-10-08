@@ -78,6 +78,9 @@
         }
     });
 
+
+    /* Climb mobile */
+
     $('.climb__handler').on('click', function () {
         const $thisItem = $(this).parents('.climb__item');
 
