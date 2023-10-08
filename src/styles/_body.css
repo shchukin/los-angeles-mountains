@@ -4,6 +4,6 @@ body {
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-text);
     font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-heigth);
 }

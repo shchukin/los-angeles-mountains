@@ -30,7 +30,7 @@
             }
                 .schedule__date {
                     vertical-align: top;
-
+                    white-space: nowrap;
                 }
 
                 .schedule__event {
@@ -38,3 +38,48 @@
                     max-width: 280px;
                     padding-left: 50px;
                 }
+
+
+
+@media (width < 740px) {
+
+    .schedule {
+        /*width: fit-content;*/
+        padding: 26px var(--outer-padding) 24px;
+        /*background-color: rgb(255 255 255 / 70%);*/
+    }
+        .schedule__heading {
+            /*display: block;*/
+            /*font-family: var(--font-heading);*/
+            /*font-weight: bold;*/
+            font-size: 26px;
+            line-height: 30px;
+            /*text-transform: uppercase;*/
+            /*color: #414f6b;*/
+        }
+
+        .schedule__table {
+            /*margin-top: 11px;*/
+            /*vertical-align: top;*/
+            /*border-collapse: collapse;*/
+        }
+            .schedule__body {
+
+            }
+                .schedule__row {
+                    /*border-top: 8px solid transparent;*/
+                }
+
+                .schedule__row:first-child {
+                    /*border-top: none;*/
+                }
+                    .schedule__date {
+                        /*vertical-align: top;*/
+                    }
+
+                    .schedule__event {
+                        /*vertical-align: top;*/
+                        /*max-width: 280px;*/
+                        /*padding-left: 50px;*/
+                    }
+}
