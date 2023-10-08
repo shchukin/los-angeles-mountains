@@ -206,9 +206,9 @@
                         text-decoration-color: transparent;
                         cursor: pointer;
                         user-select: none;
-                        transition: background-color var(--transition-hover),
-                                    text-decoration-color var(--transition-hover),
-                                    color var(--transition-hover);
+                        transition: background-color 200ms ease,
+                                    text-decoration-color 200ms ease,
+                                    color 200ms ease;
                     }
 
                     .climb__item--expanded .climb__handler {
@@ -222,12 +222,12 @@
                     /*flex-grow: 1;*/
                     /*flex-direction: column;*/
                     /*position: relative;*/
+
                 }
 
                 .climb__item--expanded .climb__dropdown {
                     display: block;
                 }
-
                     .climb__background {
                         /*position: absolute;*/
                         /*left: 0;*/
@@ -253,7 +253,19 @@
                             /*padding-bottom: 20vh;*/
                         }
                     }
-                        .climb__schedule {
 
+                        @keyframes climb-slide {
+                            from {
+                                opacity: 50%;
+                                transform: translateY(40px);
+                            }
+                            to {
+                                opacity: 100%;
+                                transform: translateY(0);
+                            }
+                        }
+
+                        .climb__schedule {
+                            animation: climb-slide 1000ms var(--ease-out-quint);
                         }
 }
