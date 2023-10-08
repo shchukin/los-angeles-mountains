@@ -80,15 +80,27 @@
 
 
     /* Climb mobile */
+    const $climbItem = $('.climb__item');
+
+    $climbItem.each(function () {
+        const height = $(this).find('.climb__dropdown').outerHeight();
+        $(this).find('.climb__strut').css('height', height);
+        if(!$(this).hasClass('climb__item--expanded') ) {
+            $(this).find('.climb__dropdown').css('display', 'none');
+        }
+    });
 
     $('.climb__handler').on('click', function () {
         const $thisItem = $(this).parents('.climb__item');
 
         if (!$thisItem.hasClass('climb__item--expanded')) {
+            $('.climb__item--expanded').find('.climb__dropdown').slideUp()
             $('.climb__item--expanded').removeClass('climb__item--expanded');
+            $thisItem.find('.climb__dropdown').slideDown();
             $thisItem.addClass('climb__item--expanded');
         } else {
             $thisItem.removeClass('climb__item--expanded');
+            $thisItem.find('.climb__dropdown').slideUp();
         }
 
         $('html, body').animate({
