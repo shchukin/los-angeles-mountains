@@ -27,6 +27,7 @@
     }
         .climb__navigation-wrap {
             display: flex;
+            flex-wrap: wrap;
             align-items: stretch;
         }
             .climb__link {
@@ -37,6 +38,7 @@
                 font-size: 20px;
                 line-height: 24px;
                 color: #b0b4be;
+                white-space: nowrap;
                 text-transform: uppercase;
                 text-underline-offset: 4px;
                 text-decoration: underline;
@@ -116,15 +118,139 @@
                 .climb__content {
                     position: relative;
                     padding-top: 6vh;
-                    padding-bottom: 6vh;
+                    padding-bottom: 12vh;
                 }
 
                 @media (min-height: 900px) {
                     .climb__content {
                         padding-top: 10vh;
-                        padding-bottom: 10vh;
+                        padding-bottom: 20vh;
                     }
                 }
                     .climb__schedule {
 
                     }
+
+
+
+@media (width < 740px) {
+
+    .climb {
+        /*min-height: calc(100vh - var(--header-height) - var(--footer-height)); !* make climb section to be a full-screen *!*/
+        /*min-height: calc(100svh - var(--header-height) - var(--footer-height)); !* if browser supports svh, use it for better viewport stretching on mobile devices *!*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*background-color: white;*/
+    }
+        .climb__head {
+            /*flex-shrink: 0;*/
+            display: block;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            /*align-items: center;*/
+        }
+            .climb__heading {
+                padding-bottom: 0;
+                margin-left: -4px;
+            }
+
+            .climb__contains {
+                margin-top: 20px;
+                /*max-width: 580px;*/
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+        .climb__navigation {
+            display: none;
+        }
+
+        .climb__body {
+            /*position: relative;*/
+            /*flex-grow: 1;*/
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+            .climb__item {
+                position: static;
+                /*left: 0;*/
+                /*top: 0;*/
+                /*right: 0;*/
+                display: block;
+                min-height: 0;
+                visibility: visible;
+                opacity: 1;
+                /*transition: opacity 600ms ease,*/
+                /*            visibility 600ms ease;*/
+            }
+
+            .climb__item--current {
+                position: static;
+                /*flex-grow: 1;*/
+            }
+                .climb__sub-heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    display: block;
+                }
+                    .climb__handler {
+                        width: 100%;
+                        background-color: #404E6C;
+                        border: none;
+                        padding: 8px var(--inner-padding);
+                        font-family: var(--font-heading);
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: #b0b4be;
+                        white-space: nowrap;
+                        text-transform: uppercase;
+                        text-underline-offset: 4px;
+                        text-decoration: underline;
+                        text-decoration-color: transparent;
+                        cursor: pointer;
+                        user-select: none;
+                        transition: background-color var(--transition-hover),
+                        text-decoration-color var(--transition-hover),
+                        color var(--transition-hover);
+                    }
+
+                    .climb__item--current .climb__handler {
+
+                    }
+
+                .climb__dropdown {
+                    display: none;
+                    /*flex-grow: 1;*/
+                    /*display: flex;*/
+                    /*flex-direction: column;*/
+                    /*position: relative;*/
+                }
+                    .climb__background {
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*top: 0;*/
+                        /*right: 0;*/
+                        /*bottom: 0;*/
+                    }
+                        .climb__image {
+                            /*width: 100%;*/
+                            /*height: 100%;*/
+                            /*object-fit: cover;*/
+                        }
+
+                    .climb__content {
+                        /*position: relative;*/
+                        /*padding-top: 6vh;*/
+                        /*padding-bottom: 12vh;*/
+                    }
+
+                    @media (min-height: 900px) {
+                        .climb__content {
+                            /*padding-top: 10vh;*/
+                            /*padding-bottom: 20vh;*/
+                        }
+                    }
+                        .climb__schedule {
+
+                        }
+}

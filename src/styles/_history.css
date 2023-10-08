@@ -152,7 +152,7 @@
 
         }
             .history__heading {
-                margin-left: 0;
+                margin-left: -4px;
             }
 
             .history__contains {
