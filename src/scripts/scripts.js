@@ -87,6 +87,10 @@
         } else {
             $thisItem.removeClass('climb__item--expanded');
         }
+
+        $('html, body').animate({
+            scrollTop: $('.climb__body').offset().top - $header.outerHeight()
+        }, 600);
     });
 
 })(jQuery);
