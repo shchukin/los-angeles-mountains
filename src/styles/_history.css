@@ -1,18 +1,19 @@
 .history {
-    min-height: 750px;
+    min-height: 580px;
     height: calc(100vh - var(--header-height)); /* make history section to be a full-screen */
     height: calc(100svh - var(--header-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
     display: flex;
     flex-direction: column;
-    padding-top: 54px;
+    padding-top: 34px;
     background-image: url("../images/history.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: center 40%;
 }
 
 @media (900px <= height) {
     .history {
+        padding-top: 54px;
         background-position: center center;
     }
 }

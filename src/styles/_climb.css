@@ -1,5 +1,5 @@
 .climb {
-    min-height: 750px;
+    min-height: 466px;
     height: calc(100vh - var(--header-height) - var(--footer-height)); /* make climb section to be a full-screen */
     height: calc(100svh - var(--header-height) - var(--footer-height)); /* if browser supports svh, use it for better viewport stretching on mobile devices */
     display: flex;
@@ -86,28 +86,38 @@
             visibility: visible;
             opacity: 1;
         }
-            .climb__handler {
+            .climb__heading {
+                margin-top: 0;
+                margin-bottom: 0;
                 display: none;
             }
+                .climb__handler {
 
-            .climb__dropdown {
-                position: relative;
-                height: 100%;
-                overflow: hidden;
-            }
-                .climb__background {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
                 }
-                    .climb__image {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
 
-                .climb__tab {
+                .climb__dropdown {
                     position: relative;
+                    height: 100%;
+                    overflow: hidden;
                 }
+                    .climb__background {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                        .climb__image {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+
+                    .climb__content {
+                        position: relative;
+                        padding-top: 10vh;
+                        padding-bottom: 10vh;
+                    }
+                        .climb__schedule {
+
+                        }

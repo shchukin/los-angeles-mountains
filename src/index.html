@@ -78,7 +78,7 @@
         </header>
         <h1 class="hero">
             Los Angeles Mountains
-            <a class="hero__scroll anchor" href="#history" role="presentation" aria-hidden="true">
+            <a class="hero__scroll anchor" href="#history">
                 Scroll down
             </a>
         </h1>
@@ -187,26 +187,82 @@
             </div>
             <div class="climb__body">
                 <div class="climb__item climb__item--current">
-                    <button class="climb__handler" type="button">
-                        Mountain 1
-                    </button>
+                    <h3 class="climb__heading">
+                        <button class="climb__handler" type="button">
+                            Mountain 1
+                        </button>
+                    </h3>
                     <div class="climb__dropdown">
                         <div class="climb__background">
                             <img class="climb__image" src="temp/mountains/mountain-a.jpg" alt="">
                         </div>
-                        <div class="climb__tab">
-                            <div class="climb__schedule">
+                        <div class="climb__content">
+                            <div class="climb__schedule container">
                                 <div class="schedule">
-
+                                    <b class="schedule__heading">
+                                        Schedule
+                                    </b>
+                                    <table class="schedule__table">
+                                        <thead class="visuallyhidden">
+                                            <tr>
+                                                <th>Date</th>
+                                                <th>Event</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="schedule__body">
+                                            <tr class="schedule__row">
+                                                <td class="schedule__date">
+                                                    <a class="fake-link">25 Nov 2016</a><!-- fake link is necessary to prevent browsers (especially mobile) from highlighting dates as a link -->
+                                                </td>
+                                                <td class="schedule__event">
+                                                    Vestibulum viverra
+                                                </td>
+                                            </tr>
+                                            <tr class="schedule__row">
+                                                <td class="schedule__date">
+                                                    <a class="fake-link">28 Nov 2016</a><!-- fake link is necessary to prevent browsers (especially mobile) from highlighting dates as a link -->
+                                                </td>
+                                                <td class="schedule__event">
+                                                    Dolor sit amet
+                                                </td>
+                                            </tr>
+                                            <tr class="schedule__row">
+                                                <td class="schedule__date">
+                                                    <a class="fake-link">18 Dec 2016</a><!-- fake link is necessary to prevent browsers (especially mobile) from highlighting dates as a link -->
+                                                </td>
+                                                <td class="schedule__event">
+                                                    Consectetur adipisicing elit ducimus, sapiente
+                                                </td>
+                                            </tr>
+                                            <tr class="schedule__row">
+                                                <td class="schedule__date">
+                                                    <a class="fake-link">7 Jan 2017</a><!-- fake link is necessary to prevent browsers (especially mobile) from highlighting dates as a link -->
+                                                </td>
+                                                <td class="schedule__event">
+                                                    Iusto magnam minima mollitia quis sapiente vitae adipisci
+                                                </td>
+                                            </tr>
+                                            <tr class="schedule__row">
+                                                <td class="schedule__date">
+                                                    <a class="fake-link">25 Nov 2016</a><!-- fake link is necessary to prevent browsers (especially mobile) from highlighting dates as a link -->
+                                                </td>
+                                                <td class="schedule__event">
+                                                    Vestibulum viverra
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="climb__item">
-                    <button class="climb__handler" type="button">
-                        Mountain 2
-                    </button>
+                    <h3 class="climb__heading">
+                        <button class="climb__handler" type="button">
+                            Mountain 2
+                        </button>
+                    </h3>
                     <div class="climb__dropdown">
                         <div class="climb__background">
                             <img class="climb__image" src="temp/mountains/mountain-b.jpg" alt="">
@@ -226,9 +282,11 @@
                     </div>
                 </div>
                 <div class="climb__item">
-                    <button class="climb__handler" type="button">
-                        Mountain 3
-                    </button>
+                    <h3 class="climb__heading">
+                        <button class="climb__handler" type="button">
+                            Mountain 3
+                        </button>
+                    </h3>
                     <div class="climb__dropdown">
                         <div class="climb__background">
                             <img class="climb__image" src="temp/mountains/mountain-a.jpg" alt="">
@@ -245,9 +303,11 @@
                     </div>
                 </div>
                 <div class="climb__item">
-                    <button class="climb__handler" type="button">
-                        Mountain 4
-                    </button>
+                    <h3 class="climb__heading">
+                        <button class="climb__handler" type="button">
+                            Mountain 4
+                        </button>
+                    </h3>
                     <div class="climb__dropdown">
                         <div class="climb__background">
                             <img class="climb__image" src="temp/mountains/mountain-b.jpg" alt="">
