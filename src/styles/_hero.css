@@ -29,7 +29,7 @@
 /* Logo is too big for tablets.
  * Need another image. Let's recreate it in photoshop with smaller logo
  */
-@media (750px <= width < 1100px) {
+@media (740px <= width < 1100px) {
 
     .hero {
         background-image: url("../images/hero-tablet.jpg");
@@ -45,7 +45,7 @@
 /*
  *
  */
-@media (width < 750px) {
+@media (width < 740px) {
 
     .hero {
         background-image: url("../images/hero-mobile.jpg");
