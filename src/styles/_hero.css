@@ -13,7 +13,7 @@
     overflow: hidden;
 }
 
-@media (1.5dppx <= resolution < 2.5dppx ) {
+@media (1.5dppx <= resolution) {
     .hero {
         background-image: url("../images/hero@2x.webp");
     }
@@ -29,7 +29,7 @@
         background-image: url("../images/hero-tall.webp");
     }
 
-    @media (1.5dppx <= resolution < 2.5dppx ) {
+    @media (1.5dppx <= resolution) {
         .hero {
             background-image: url("../images/hero-tall@2x.webp");
         }
@@ -47,7 +47,7 @@
         background-image: url("../images/hero-tablet.webp");
     }
 
-    @media (1.5dppx <= resolution < 2.5dppx ) {
+    @media (1.5dppx <= resolution) {
         .hero {
             background-image: url("../images/hero-tablet@2x.webp");
         }
@@ -58,7 +58,7 @@
             background-image: url("../images/hero-tablet-tall.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution) {
             .hero {
                 background-image: url("../images/hero-tablet-tall@2x.webp");
             }
@@ -75,7 +75,7 @@
         background-image: url("../images/hero-mobile.webp");
     }
 
-    @media (1.5dppx <= resolution < 2.5dppx ) {
+    @media (1.5dppx <= resolution) {
         .hero {
             background-image: url("../images/hero-mobile@2x.webp");
         }
@@ -89,7 +89,7 @@
             background-image: url("../images/hero-mobile-landscape.webp");
         }
 
-        @media (1.5dppx <= resolution < 2.5dppx ) {
+        @media (1.5dppx <= resolution) {
             .hero {
                 background-image: url("../images/hero-mobile-landscape@2x.webp");
             }
