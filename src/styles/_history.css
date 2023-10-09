@@ -129,7 +129,7 @@
 
 
     /* single tile */
-    .history__carousel .slick-slide {
+    .history__carousel .history__item {
         padding: 5px; /* left and right is needed to create a gap between tiles while top and bottom is needed to not to cut focus ring*/
         outline: none !important;
     }
@@ -144,6 +144,9 @@
         aspect-ratio: 16 / 10;
         background-color: #FFFFFF;
     }
+
+
+
 
 
 @media (740px <= width < 1100px) {
@@ -161,6 +164,14 @@
 }
 
 
+.history__carousel:not(.slick-initialized) {
+    display: flex;
+    align-items: stretch;
+
+}
+.history__carousel:not(.slick-initialized) .history__item {
+    flex-shrink: 0;
+}
 
 @media (width < 740px) {
 
