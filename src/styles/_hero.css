@@ -4,6 +4,7 @@
     height: 100svh; /* if browser supports svh, use it for better viewport stretching on mobile devices */
     margin-top: 0;
     margin-bottom: 0;
+    background-color: #E6E8EB;
     background-image: url("../images/hero.webp");
     background-size: cover;
     background-repeat: no-repeat;
