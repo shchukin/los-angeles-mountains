@@ -168,8 +168,8 @@
 .history__carousel:not(.slick-initialized) {
     display: flex;
     align-items: stretch;
-
 }
+
 .history__carousel:not(.slick-initialized) .history__item {
     flex-shrink: 0;
 }

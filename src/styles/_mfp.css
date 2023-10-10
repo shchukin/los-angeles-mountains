@@ -14,8 +14,7 @@
 /* animate in */
 .mfp-ready.mfp-bg,
 .mfp-ready.mfp-wrap .mfp-content,
-.mfp-ready .mfp-arrow
-{
+.mfp-ready .mfp-arrow {
     opacity: 100%;
 }
 

@@ -156,11 +156,10 @@
     .header {
         --link-padding: 16px;
     }
-
 }
 
 
-@media ( 380px <= width < 420px ) {
+@media (380px <= width < 420px) {
 
     .header {
         --link-padding: 10px;
@@ -172,7 +171,7 @@
 }
 
 
-@media ( width < 380px ) {
+@media (width < 380px) {
 
     .header__logo {
         width: 44px;
